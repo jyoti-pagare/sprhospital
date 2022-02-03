@@ -1,0 +1,17 @@
+package com.mph.dao;
+
+import java.util.List;
+
+import com.mph.entity.Patient;
+
+public interface PatientDao {
+	public void createPatient(Patient patient);
+	public List<Patient> getAllPatient();
+	public Patient getPatient();
+	public List<Patient> updatePatient();
+	public List<Patient> deletePatient(int pid);
+	public Patient getPatient(Patient pat);
+	public List<Patient> searchPatient(int pid);
+	List<Patient> updatePatient(Patient patient);
+	
+}
