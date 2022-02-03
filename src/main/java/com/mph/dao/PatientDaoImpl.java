@@ -21,10 +21,6 @@ public class PatientDaoImpl implements PatientDao{
 	protected Session getSession() {
 		return sessionFactory.getCurrentSession();
 	}
-	/**
-	 *   informs the compiler that the element is meant to override an element declared in a superclass
-	 */
-	
 	
 	
 	@Override
@@ -63,7 +59,16 @@ public class PatientDaoImpl implements PatientDao{
 		return getAllPatient();
 	}
 
-	
+	/*@Override
+	public List<Patient> deletePatient(int pid) {
+		Query qry = getSession().createQuery(" delete Patient p where pid=:pid");
+		qry.setParameter("pid", pid);
+		int noofrows = qry.executeUpdate();
+		if(noofrows>0) {
+			System.out.println("Deleted " + noofrows + " rows. ");
+		}
+		return getAllPatient();
+	}**/
 
 	
 	@Override

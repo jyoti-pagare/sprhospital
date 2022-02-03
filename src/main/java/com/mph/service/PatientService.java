@@ -9,7 +9,7 @@ public interface PatientService {
 	public List<Patient> getAllPatient();
 	public Patient getPatient(int id);
 	public List<Patient> updatePatient(Patient patient);
-	public List<Patient> deletePatient(int pid);
+	//public List<Patient> deletePatient(int pid);//
 
 	public List<Patient> searchPatient(int pid);
 	Patient getPatient(Patient pat);

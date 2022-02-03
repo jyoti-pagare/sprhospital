@@ -16,9 +16,6 @@ public class PatientServiceImpl implements PatientService{
 
 	@Autowired
 	public PatientDao patientDao;
-	/**
-	 * informs the compiler that the element is meant to override an element declared in a superclass
-	 */
 	
 	
 	@Override
@@ -44,6 +41,12 @@ public class PatientServiceImpl implements PatientService{
 		return patientDao.updatePatient(patient);
 	}
 
+	/*@Override
+	public List<Patient> deletePatient(int pid) {
+	
+		return patientDao.deletePatient(pid);
+	}**/
+
 	
 
 	@Override
@@ -56,12 +59,6 @@ public class PatientServiceImpl implements PatientService{
 	public Patient getPatient(int id) {
 		
 		return patientDao.getPatient(id);
-	}
-
-	@Override
-	public List<Patient> deletePatient(int pid) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 

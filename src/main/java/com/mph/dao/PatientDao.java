@@ -9,7 +9,7 @@ public interface PatientDao {
 	public List<Patient> getAllPatient();
 	public Patient getPatient(int id);
 	public List<Patient> updatePatient();
-
+	//public List<Patient> deletePatient(int pid);//
 	public Patient getPatient(Patient pat);
 	public List<Patient> searchPatient(int pid);
 	public List<Patient> updatePatient(Patient patient);

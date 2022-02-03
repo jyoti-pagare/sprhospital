@@ -52,7 +52,20 @@ public class PatientRestController {
 		patientService.createPatient(patient);
 		return patient;
 	}
-	
+	/**
+	 * for mapping http delete requests onto specific handler methods 
+	 * @param pid  it reads the pid value  and binds it automatically
+	 * @return  deletes the patient 
+	 */
+	/*@DeleteMapping("/deletePat/{id}")
+	public ResponseEntity<List<Patient>> deletePatient(@PathVariable("id") int pid) {
+		List<Patient> li = patientService.deletePatient(pid);
+		if (li.isEmpty()) {
+			return new ResponseEntity<List<Patient>>(HttpStatus.NO_CONTENT);
+		}
+
+		return new ResponseEntity<List<Patient>>(li,HttpStatus.OK);
+	}**/
 	/**
 	 * mapping http put requests onto specific handler methods
 	 * @param patient it reads the value and binds after updation of value
